@@ -1,25 +1,207 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Lewi Gilamichael</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.min.css">
-  </head>
-  <body>
-  <section class="section">
-    <div class="container">
-      <h1 class="title">
-        Hello World
-      </h1>
-      <p class="subtitle">
-        <strong>Lewi</strong> is here!
-      </p>
-      <p> 
-        Hi, I'm Lewi Gilamichael, a fresh and newly minted full-stack web developer from New York City, USA. I use React, Node.js and MongoDB to build web apps to meet all your needs. Outside of coding I enjoy watching lindy-hop videos, trying to dance like them, running and reading about relationship and community building essays and books. 
-      </p>
-    </div>
+<!doctype HTML>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lewi Gilamichael</title>
+</head>
+
+<body>
+  <header>
+    <h1>Lewi Gilamichael</h1>
+     <nav class="main-nav">
+      <ul>
+        <li class="main-nav-link"><a href="#about">About me</a></li>
+        <li class="main-nav-link"><a href="#work">My work</a></li>
+        <li class="main-nav-link"><a href="#contact">Contact me</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="about">
+    <h2>Swing Dancer and <span class="header-tag">Ambitious Web Developer</span></h2>
+   
+    <img class="photo" src="Lewi-headshot.JPG" alt="Lewi Gilamichael headshot">
+   <nav class="contact-links">
+      <ul>
+        <li class="contact-link contact-link-email">
+          <a href="mailto:lewigilamichael@gmail.com">Email</a>
+        <li class="contact-link contact-link-linkedin">
+          <a href="https://www.linkedin.com/in/lewi-gilamichael-584512a4/">LinkedIn</a>
+        <li class="contact-link contact-link-github">
+          <a href="https://www.github.com/lewi-g">GitHub</a>
+      </ul>
+    </nav>
+
+    <p class="about">
+      Hi, I'm Lewi Gilamichael, a fresh and newly minted full-stack web developer 
+      exicited and enthusiastic about using Node, React, Redux and GraphQL to address my clients' needs. 
+      When I am not writing, reading or learning more about web development, I spend my time 
+      <a href="https://www.youtube.com/watch?v=uTa_K2pkENQ&list=PL00oSiWZlEA0vluJMGwff3xNNu38bHT3u">swing dancing</a> 
+      and teaching swing dances in New York City. I also spend a fair amount of time reading about and examining 
+      the forces that affect community and social change. 
+    </p>
+    <p class="about" id="extra-about">
+      I have 6+ years of experience as a Clinical Laboratory Scientist in Microbiology at 
+      <a href=#>Johns Hopkins Hospital</a>. Managing and streamlining multiple concurrent 
+      processes to deliver accurate and quality results in a timely manner was a daily pattern. 
+      Testing, Quality Control and Quality Assurance are values I hold that I endeavour to 
+      inject into all of my projects, personal and professional.
+    </p>
   </section>
-  </body>
+    
+  <section class="work" id="work">
+    <h2>My work</h2>
+    <section class="project">
+      <h3>EpiQuotes</h3>
+      
+      <p class="project-description">
+        A quotes database populated by users. 
+      </p>
+      <img class="project-image" src="http://unsplash.it/350/150?random&amp;bust=1" alt="Epiquotes screenshot">
+
+      <section class="project-information">
+      <ul class="project-stack">
+        <li class="project-stack-item">
+          JavaScript
+        </li>
+        <li class="project-stack-item">
+          JQuery
+        </li>
+        <li class="project-stack-item">
+          Node.js
+        </li>
+      </ul>
+      <nav class="project-links">
+        <ul>
+          <li class="project-link project-link-live">
+            <a href="epiquotes.herokuapp.com">Live demo</a>
+          </li>
+          <li class="project-link project-link-github">
+            <a href="#">Source code</a>
+          </li>
+        </ul>
+      </nav>
+      </section>
+    </section>
+    
+    <section class="project">
+      <h3>'Man'-up: Emotion Mapper</h3>
+      <p class="project-description">
+        An emotion diary useful for tracking changes in mood 
+        and the associated event to help the user see trends. 
+      </p>
+      <img class="project-image" src="http://unsplash.it/350/150?random&amp;bust=2" alt="FooBar screenshot">
+      <section class="project-information">
+      <ul class="project-stack">
+        <li class="project-stack-item">
+          React and Redux
+        </li>
+        <li class="project-stack-item">
+          Express
+        </li>
+        <li class="project-stack-item">
+          Node.js
+        </li>
+      </ul>
+      <nav class="project-links">
+        <ul>
+          <li class="project-link project-link-live">
+            <a href="emotion-mapper.herokuapp.com/emotions">Live demo</a>
+          </li>
+          <li class="project-link project-link-github">
+            <a href="#">Source code</a>
+          </li>
+        </ul>
+      </nav>
+      </section>
+    </section>
+    
+    <section class="project">
+      <h3>Prioritize</h3>
+      <p class="project-description">
+        A task manager app that sorts all your todo-items using an
+         Importance vs. Urgency Matrix to helps you make the most of your time.
+      </p>
+      <img class="project-image" src="http://unsplash.it/350/150?random&amp;bust=3" alt="AliceBob screenshot">
+      <section class="project-information">
+      <ul class="project-stack">
+        <li class="project-stack-item">
+          React and Redux
+        </li>
+        <li class="project-stack-item">
+          Test Driven Development
+        </li>
+        <li class="project-stack-item">
+          Node.js
+        </li>
+      </ul>
+      <nav class="project-links">
+        <ul>
+          <li class="project-link project-link-live">
+            <a href="prioritize-app.herokuapp.com/">Live demo</a>
+          </li>
+          <li class="project-link project-link-github">
+            <a href="#">Source code</a>
+          </li>
+        </ul>
+      </nav>
+      </section>
+    </section>
+
+    <section class="project">
+      <h3>Spaced Repetition Project: Are you smarter than a 5th Grader</h3>
+      <p class="project-description">
+        An app to help users learn Chemistry by presenting 
+        unfamiliar facts more frequently than those the user is most familiar with. 
+      </p>
+      <img class="project-image" src="http://unsplash.it/350/150?random&amp;bust=4" alt="Wibble screenshot">
+      <section class="project-information">
+      <ul class="project-stack">
+        <li class="project-stack-item">
+          React
+        </li>
+        <li class="project-stack-item">
+          Redux
+        </li>
+        <li class="project-stack-item">
+          Node.js
+        </li>
+      </ul>
+      <nav class="project-links">
+        <ul>
+          <li class="project-link project-link-live">
+            <a href="#">Live demo</a>
+          </li>
+          <li class="project-link project-link-github">
+            <a href="#">Source code</a>
+          </li>
+        </ul>
+      </nav>
+      </section>
+    </section>
+  </section>
+
+    <footer>
+    <!--<h1>Lewi Gilamichael</h1>-->
+     <nav class="main-nav">
+      <ul>
+        <li class="footer-nav-link"><a href="#about">About me</a></li>
+        <li class="footer-nav-link"><a href="#work">My work</a></li>
+        <li class="footer-nav-link"><a href="#contact">Contact me</a></li>
+      </ul>
+    </nav>
+  </footer>
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous">
+  </script>
+
+
+</body>
+
 </html>
