@@ -78,7 +78,7 @@ h1, h2, strong {
   margin-bottom: 0;
 }
 h2 {
-  color: #27432C;
+  /*color: #27432C;*/
   line-height: 1.2em;
 }
 h3 {
@@ -87,6 +87,9 @@ h3 {
 p.about{
   margin: 16px 0 6px 0;
   /*width: 300px;*/
+}
+#extra-about {
+  padding-bottom: 50px;
 }
 p.project-description {
   margin: 10px, auto, 2px;
@@ -104,7 +107,7 @@ p.project-description {
 a:link, a:visited {
   /*color: #27432C;*/
   color: #0f0b05;
-   text-shadow: red 0.5px 0; 
+  text-shadow: red 0.5px 0; 
   text-decoration: none;
 }
 a:hover {
@@ -118,7 +121,8 @@ a:hover {
 }
 
 .project-image {
-  /*display: none;*/
+  display: block;
+  margin: 0 auto;
 }
 
 span.header-tag {
