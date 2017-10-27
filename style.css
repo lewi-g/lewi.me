@@ -61,9 +61,16 @@ body {
   margin-bottom: 0px;
   padding: 0px 6px 0px 0px;
 }
-
+header > h1 {
+  margin-bottom: 0px;
+}
+.main-nav > ul {
+  margin-top: -5px;
+}
 h1 {
   line-height: 1.2em;
+  font-size: 2.5em;
+  padding-bottom: 0;
 }
 h1, h2, strong {
   font-family: "vollkorn";
@@ -71,6 +78,7 @@ h1, h2, strong {
   margin-bottom: 0;
 }
 h2 {
+  color: #27432C;
   line-height: 1.2em;
 }
 h3 {
@@ -94,13 +102,15 @@ p.project-description {
   padding-bottom: 50px;
 }
 a:link, a:visited {
+  /*color: #27432C;*/
   color: #0f0b05;
+   text-shadow: red 0.5px 0; 
   text-decoration: none;
 }
 a:hover {
   padding: 1px;
   border: dotted red 1px;
-  /*background-color: yellow;*/
+  text-shadow: red 0.5px 0; 
 }
 .project-information {
   display: flex;
@@ -138,4 +148,10 @@ li.footer-nav-link > a {
   .photo, img {
   max-width: 32em;
 }
+  span.header-tag {
+    padding: 0px 0px 0px 60px;
+  }
+  span.and {
+    padding: 0px 0px 0px 225px;
+  }
 }
