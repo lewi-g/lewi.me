@@ -61,6 +61,7 @@ body {
   margin-bottom: 0px;
   padding: 0px 6px 0px 0px;
 }
+
 header > h1 {
   margin-bottom: 0px;
 }
@@ -109,9 +110,9 @@ a:link, a:visited {
   color: #0f0b05;
   text-shadow: red 0.5px 0; 
   text-decoration: none;
+  padding: 2px;
 }
 a:hover {
-  padding: 1px;
   border: dotted red 1px;
   text-shadow: red 0.5px 0; 
 }
@@ -127,12 +128,12 @@ a:hover {
 
 span.header-tag {
   display: block;
-  padding: 0px 0px 0px 24px;
+  padding: 0px 0px 0px 1.8em;
   color: red;
 }
 
 span.and {
-  padding: 0 0 0 48px;
+  padding: 0 0 0 8em;
 }
 footer {
   margin-top: 10px;
@@ -146,16 +147,48 @@ li.footer-nav-link > a {
 }
 
 @media (min-width: 732px) {
+
   body {
   max-width: 32em;
   }
+  header {
+  /*padding-left: 40px;*/
+  text-align: center;
+  }
   .photo, img {
   max-width: 32em;
-}
+  }
   span.header-tag {
     padding: 0px 0px 0px 60px;
   }
   span.and {
-    padding: 0px 0px 0px 225px;
+    padding: 0px 0px 0px 12em;
+  }
+}
+
+@media (min-width: 1090px) {
+  body {
+    max-width: 42em;
+  }
+  .photo {
+  max-width: 26em;
+  float: right;
+  margin-top: 0.75em;
+  }
+  .contact-links {
+    display: none;
+  }
+  #about >h2 {
+    display: block;
+    margin: auto;
+  }
+  .adjective {
+    padding: 0px 0px 0px 5em;
+  }
+  span.header-tag {
+    padding: 0px 0px 0px 60px;
+  }
+  span.and {
+    padding: 0px 0px 0px 10em;
   }
 }
