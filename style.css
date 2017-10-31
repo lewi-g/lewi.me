@@ -108,13 +108,13 @@ p.project-description {
 a:link, a:visited {
   /*color: #27432C;*/
   color: #0f0b05;
-  text-shadow: red 0.5px 0; 
+  text-shadow: #B42F29 1px 0; 
   text-decoration: none;
   padding: 2px;
 }
 a:hover {
-  border: dotted red 1px;
-  text-shadow: red 0.5px 0; 
+  /*border: dotted red 1px;*/
+  text-shadow: #B42F29 1px 2px 3px;
 }
 .project-information {
   display: flex;
@@ -126,10 +126,11 @@ a:hover {
   margin: 0 auto;
 }
 
-span.header-tag {
+span.main-header {
   display: block;
   padding: 0px 0px 0px 1.8em;
   color: red;
+  font-size: 1.1em;
 }
 
 span.and {
@@ -158,11 +159,14 @@ li.footer-nav-link > a {
   .photo, img {
   max-width: 32em;
   }
-  span.header-tag {
+  .adjective {
+    padding: 0px 0px 0px 1.4em;
+  }
+  span.main-header {
     padding: 0px 0px 0px 60px;
   }
   span.and {
-    padding: 0px 0px 0px 12em;
+    padding: 0px 0px 0px 13em;
   }
 }
 
@@ -174,9 +178,14 @@ li.footer-nav-link > a {
   max-width: 26em;
   float: right;
   margin-top: 0.75em;
+  margin-left: 0.2em;
   }
   .contact-links {
     display: none;
+  }
+  p.about {
+    /*text-align: justify;*/
+    /*margin-right: 5px;*/
   }
   #about >h2 {
     display: block;
@@ -185,10 +194,10 @@ li.footer-nav-link > a {
   .adjective {
     padding: 0px 0px 0px 5em;
   }
-  span.header-tag {
+  span.main-header {
     padding: 0px 0px 0px 60px;
   }
   span.and {
-    padding: 0px 0px 0px 10em;
+    padding: 0px 0px 0px 12em;
   }
 }
