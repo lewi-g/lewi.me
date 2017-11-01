@@ -68,7 +68,6 @@ header > h1 {
   margin-bottom: 0px;
 }
 
-
 h1 {
   line-height: 1.2em;
   font-size: 2.5em;
@@ -84,7 +83,7 @@ h2 {
 }
 h2.section-title {
   font-weight: 600; 
-  margin-bottom: 3em;
+  margin-bottom: 2em;
 }
 h3 {
   margin: 16px auto 6px;
@@ -100,7 +99,7 @@ span.and {
   padding: 0 0 0 8em;
 } 
 #about, #work {
-  padding: 2em;
+  padding-top: 2em;
 }
 p.about{
   margin: 16px 0 6px 0;
