@@ -44,7 +44,7 @@ table {
 
 /*Beginning of styles============================*/
 
-body {
+div {
   margin: 0 auto;
   max-width: 22em;
   font-family: "Exo", arial;
@@ -59,7 +59,7 @@ body {
 }
 .main-nav-link, .footer-nav-link {
   display: inline-block;
-  font-size: 100%;
+  font-size: 120%;
   margin-bottom: 0px;
   padding: 0px 6px 0px 0px;
 }
@@ -81,16 +81,24 @@ h1, h2, strong {
 h2 {
   line-height: 1.2em;
 }
-h2.section-title {
+h3 {
+  font-size: 1.5em;
+}
+
+.section-title {
   font-weight: 600; 
+  font-size: 2em;
   margin-bottom: 2em;
 }
 h3 {
   margin: 16px auto 6px;
 }
+span.adjective {
+  font-size: 1.1em;
+}
 span.main-header {
   display: block;
-  padding: 0px 0px 0px 1.8em;
+  padding: 0px 0px 0px 1em;
   color: red;
   font-size: 1.1em;
 }
@@ -101,24 +109,26 @@ span.and {
 #about, #work {
   padding-top: 2em;
 }
-p.about{
+p.about, p.extra-about{
   margin: 16px 0 6px 0;
-  /*width: 300px;*/
 }
 
 .project {
  margin-bottom: 5em;
 }
 a:link, a:visited {
-  /*color: #27432C; pink: fff0f0*/
   color: #0f0b05;
   text-shadow: #B42F29 1px 0; 
   text-decoration: none;
   padding: 2px;
 }
 a:hover {
-  /*border: dotted red 1px;*/
-  text-shadow: #B42F29 1px 2px 3px;
+  color: #D93D1C;
+  font-weight: bold;
+}
+p a:link {
+  text-shadow: none;
+  text-decoration: none;
 }
 
 p.project-description {
@@ -149,21 +159,26 @@ li.footer-nav-link > a {
 
 @media (min-width: 732px) {
 
-  body {
+  div {
   max-width: 32em;
   }
   header {
-  /*padding-left: 40px;*/
   text-align: center;
   }
   .photo, img {
   max-width: 32em;
+  margin-top: 1em;
   }
-  .adjective {
+
+  #about h2 {
     padding: 0px 0px 0px 1.4em;
+  }
+  span.adjective {
+    font-size: 1em;
   }
   span.main-header {
     padding: 0px 0px 0px 60px;
+      font-size: 1.3em;
   }
   span.and {
     padding: 0px 0px 0px 13em;
@@ -171,14 +186,13 @@ li.footer-nav-link > a {
 }
 
 @media (min-width: 1224px) {
-  body {
+  div {
     max-width: 70%;
   }
   .photo{
   max-width: 26em;
   float: right;
-  margin-top: 3em;
-  margin-left: 1em;
+  margin: 3em 0 5em 2em;
   }
   header {
     text-align: right;
@@ -201,10 +215,10 @@ li.footer-nav-link > a {
   #work {
     clear: both;
   }
-.project {
-  max-width: 45%;
-  margin: 0 auto 5em;
-}
+  .project {
+    max-width: 45%;
+    margin: 0 auto 5em;
+  }
   .first-project{
     float: left;
   }
@@ -217,16 +231,15 @@ li.footer-nav-link > a {
   .project-image {
     width: 26em;
   }
-  .adjective {
+  about h2 {
     padding: 0px 0px 0px 0em;
   }
   span.main-header {
     padding: 0px
-    /*padding: 0px 0px 0px 60px;*/
   }
   span.and {
     padding: 0px;
-    /*padding: 0px 0px 0px 12em;*/
+    font-size: 0.9em;
   }
 
 }
