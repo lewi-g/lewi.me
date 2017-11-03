@@ -98,15 +98,20 @@ h3 {
 span.adjective {
   font-size: 1.1em;
 }
-span.main-header {
-  display: block;
-  padding: 0px 0px 0px 1em;
-  color: red;
+
+  span.main-header {
+     display: block;
+      padding: 0px 0px 0px 1em;
+      color: red;
   font-size: 1.1em;
-}
-span.and {
-  padding: 0 0 0 8em;
-} 
+    padding: 0px
+  }
+
+  span.and {
+    display: none;
+    padding: 0px;
+    font-size: 0.9em;
+  }
 #about {
   padding-top: 2em;
 }
@@ -145,6 +150,19 @@ p.project-description {
   display: block;
 }
 
+.project-stack {
+  display: flex;
+  justify-content: space-around;
+}
+.project-stack-item {
+  padding: 0 .5em;
+}
+.project-links ul{
+  display: block;
+  display: flex;
+  justify-content: space-around;
+}
+
 footer {
   clear: both;
   display: flex;
@@ -177,29 +195,10 @@ li.footer-nav-link a {
   }
 
   #about h2 {
-    padding: 0px 0px 0px 16px;
-  }
-  span.adjective {
-    font-size: 1em;
+    padding: 0px 0px 0px 0px;
   }
   span.main-header {
-    padding: 0px 0px 0px 60px;
-      font-size: 1.3em;
-  }
-  span.and {
-    padding: 0px 0px 0px 13em;
-  }
-  .project-stack {
-    display: flex;
-    justify-content: space-around;
-  }
-  .project-stack-item {
-    padding: 0 .5em;
-  }
-  .project-links ul{
-    display: block;
-    display: flex;
-    justify-content: space-around;
+    font-size: 1.3em;
   }
 }
 @media (max-width: 361px) {
@@ -208,7 +207,7 @@ li.footer-nav-link a {
   }
   span.main-header {
     padding: 0px 0px 0px 0px;
-      font-size: 1em;
+    font-size: 1em;
   }
   span.and {
     padding: 0px 0px 0px 0em;
@@ -228,9 +227,8 @@ li.footer-nav-link a {
   margin: 3em 0 5em 2em;
   }
   header {
-    text-align: right;
-    padding-right: 1em;
-    float: right;
+    text-align: left;
+    float: left;
   }
   .contact-links {
     display: none;
@@ -239,10 +237,14 @@ li.footer-nav-link a {
     clear:left;
     padding-top: 3em;
   }
+  h1 {
+    font-size: 3em;
+  }
   #about >h2 {
     display: block;
     margin: auto;
-    float: left;
+    float: right;
+    text-align: right;
     width: 50%;
   }
   #work {
@@ -270,8 +272,14 @@ li.footer-nav-link a {
   about h2 {
     padding: 0;
   }
+  span.adjective {
+    font-size: 1.3em;
+    line-height: 1.2em;
+  }
   span.main-header {
-    padding: 0px
+    padding: 0px;
+    font-size: 1.52em;
+    margin-top: .25em;
   }
 
   span.and {
@@ -280,4 +288,9 @@ li.footer-nav-link a {
     font-size: 0.9em;
   }
 
+}
+@media (min-width: 1281px) {
+  span.main-header {
+    font-size: 1.6em;
+  }
 }
