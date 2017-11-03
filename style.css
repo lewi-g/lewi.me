@@ -84,7 +84,6 @@ h2 {
 h3 {
   font-size: 1.5em;
 }
-
 .section-title {
   font-weight: 600; 
   font-size: 2em;
@@ -102,7 +101,6 @@ span.main-header {
   color: red;
   font-size: 1.1em;
 }
-
 span.and {
   padding: 0 0 0 8em;
 } 
@@ -116,12 +114,14 @@ p.about, p.extra-about{
 .project {
  margin-bottom: 5em;
 }
+
 a:link, a:visited {
   color: #0f0b05;
   text-shadow: #B42F29 1px 0; 
   text-decoration: none;
   padding: 2px;
 }
+
 a:hover {
   color: #D93D1C;
   font-weight: bold;
@@ -135,7 +135,6 @@ p.project-description {
   margin: 10px, auto, 2px;
 }
 .project-information {
-  display: flex;
   justify-content: space-around;
 }
 
@@ -148,13 +147,17 @@ footer {
   display: flex;
   justify-content: space-around;
   margin-top: 10px;
-  padding: 10px;
+  margin-bottom: 2em;
+  padding: 1.5em;
   background-color: #0f0b05;
   width: 100%;
 }
 
-li.footer-nav-link > a {
+li.footer-nav-link a {
   color: white;
+}
+.third-project {
+  margin-bottom: 2em;
 }
 
 @media (min-width: 732px) {
@@ -171,7 +174,7 @@ li.footer-nav-link > a {
   }
 
   #about h2 {
-    padding: 0px 0px 0px 1.4em;
+    padding: 0px 0px 0px 1em;
   }
   span.adjective {
     font-size: 1em;
@@ -183,20 +186,48 @@ li.footer-nav-link > a {
   span.and {
     padding: 0px 0px 0px 13em;
   }
+  .project-stack {
+    display: flex;
+    justify-content: space-around;
+  }
+  .project-stack-item {
+    padding: 0 .5em;
+  }
+  .project-links ul{
+    display: block;
+    display: flex;
+    justify-content: space-around;
+  }
 }
+@media (max-width: 361px) {
 
+  span.adjective {
+    font-size: 1em;
+  }
+  span.main-header {
+    padding: 0px 0px 0px 0px;
+      font-size: 1em;
+  }
+  span.and {
+    padding: 0px 0px 0px 0em;
+  }
+}
 @media (min-width: 1224px) {
+  .section-title{
+    display: none;
+  }
   div {
     max-width: 70%;
   }
   .photo{
+    clear: both;
   max-width: 26em;
   float: right;
   margin: 3em 0 5em 2em;
   }
   header {
     text-align: right;
-    padding-right: 2em;
+    padding-right: 1em;
     float: right;
   }
   .contact-links {
@@ -222,12 +253,15 @@ li.footer-nav-link > a {
   .first-project{
     float: left;
   }
+
   .second-project {
     float: right;
   }
+
   .third-project {
     clear: both
    }
+
   .project-image {
     width: 26em;
   }
@@ -237,9 +271,13 @@ li.footer-nav-link > a {
   span.main-header {
     padding: 0px
   }
+
   span.and {
     padding: 0px;
     font-size: 0.9em;
+  }
+  .and {
+    display: none;
   }
 
 }
