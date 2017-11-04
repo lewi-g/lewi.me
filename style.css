@@ -44,7 +44,7 @@ table {
 
 /*Beginning of styles============================*/
 body {
-  max-width: 95%;
+  max-width: 100%;
 }
 
 div {
@@ -224,7 +224,7 @@ li.footer-nav-link a {
     clear: both;
   max-width: 26em;
   float: right;
-  margin: 3em 0 5em 2em;
+  margin: 3em 0 7em 2em;
   }
   header {
     text-align: left;
