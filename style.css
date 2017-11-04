@@ -152,9 +152,12 @@ p.project-description {
 
 .project-stack {
   display: flex;
+  flex-flow: wrap;
   justify-content: space-around;
+  align-items: center;
 }
 .project-stack-item {
+  
   padding: 0 .5em;
 }
 .project-links ul{
