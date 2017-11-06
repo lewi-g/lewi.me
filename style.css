@@ -43,17 +43,24 @@ table {
 }
 
 /*Beginning of styles============================*/
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 body {
   max-width: 100%;
+  font-family: "Exo", arial;
+  line-height: 1.5;
+  padding-top: 4em;
+  color: #0f0b05;
 }
 
 div {
   margin: 0 auto;
   max-width: 22em;
-  font-family: "Exo", arial;
-  line-height: 1.5;
-  padding: 4em 1em;
-  color: #0f0b05;
 }
 
 .photo, img {
@@ -66,7 +73,18 @@ div {
   margin-bottom: 0px;
   padding: 0px 6px 0px 0px;
 }
+a:link, a:visited {
+  color: #0f0b05;
+  text-shadow: #B42F29 1px 0; 
+  text-decoration: none;
+  padding: 2px;
+}
 
+a:hover {
+  color: #D93D1C;
+  font-weight: bold;
+}
+/* Headers and Section Titles-----*/
 header > h1 {
   margin-bottom: 0px;
 }
@@ -94,49 +112,42 @@ h3 {
   margin-top: 2em;
   margin-bottom: 1em;
 }
+/* About Me section ------*/
+
+#about {
+  padding-top: 2em;
+}
 
 span.adjective {
   font-size: 1.1em;
 }
 
-  span.main-header {
-     display: block;
-      padding: 0px 0px 0px 1em;
-      color: red;
+span.main-header {
+  display: block;
+  padding: 0px 0px 0px 1em;
+  color: red;
   font-size: 1.1em;
-    padding: 0px
-  }
-
-  span.and {
-    display: none;
-    padding: 0px;
-    font-size: 0.9em;
-  }
-#about {
-  padding-top: 2em;
+  padding: 0px
 }
+
+span.and {
+  display: none;
+  padding: 0px;
+  font-size: 0.9em;
+}
+
 p.about, p.extra-about{
   margin: 16px 0 6px 0;
 }
 
-.project {
- margin-bottom: 5em;
-}
-
-a:link, a:visited {
-  color: #0f0b05;
-  text-shadow: #B42F29 1px 0; 
-  text-decoration: none;
-  padding: 2px;
-}
-
-a:hover {
-  color: #D93D1C;
-  font-weight: bold;
-}
 p a:link {
   text-shadow: none;
   text-decoration: none;
+}
+
+/* Projects and projects section*/
+.project {
+ margin-bottom: 5em;
 }
 
 p.project-description {
@@ -148,8 +159,15 @@ p.project-description {
 
 .project-image {
   display: block;
+  border-radius: 7px;
+  box-shadow:inset 0 0 1em gold, 0 0 1em #CC5632;
+  /*box-shadow:  1px 2px 3px #0f0b05;*/
+  height: 200px;
+  width: 300px;
 }
-
+.project-image:hover {
+  opacity: 0.9;
+}
 .project-stack {
   display: flex;
   flex-flow: wrap;
@@ -157,22 +175,33 @@ p.project-description {
   align-items: center;
 }
 .project-stack-item {
-  
   padding: 0 .5em;
 }
-.project-links ul{
+.project-links ul {
   display: block;
   display: flex;
   justify-content: space-around;
 }
+button {
+  padding: 3px;
+  margin-top: 0.8em;
+  font-size: 1.2em;
+  border-radius: 7px;
+  background-color: #e7e7e7;
+}
+button:hover {
+  padding: 3px;
+}
+
 
 footer {
   clear: both;
   display: flex;
   justify-content: space-around;
   margin-top: 10px;
-  margin-bottom: 2em;
-  padding: 1.5em;
+  margin-bottom: 1em;
+  padding-top: 2em;
+  padding-bottom: 3.5em;
   background-color: #0f0b05;
   width: 100%;
 }
@@ -252,25 +281,26 @@ li.footer-nav-link a {
   }
   #work {
     clear: both;
+    display:flex;
   }
   .project {
-    max-width: 45%;
+    max-width: 30%;
     margin: 0 auto 5em;
   }
   .first-project{
-    float: left;
+    /*display: flex;*/
   }
 
   .second-project {
-    float: right;
+    /*display: flex;*/
   }
 
   .third-project {
-    clear: both
+    /*display: flex;*/
    }
 
   .project-image {
-    width: 26em;
+    max-width: 14em;
   }
   about h2 {
     padding: 0;
