@@ -135,9 +135,12 @@ span.and {
   padding: 0px;
   font-size: 0.9em;
 }
+#about p {
+  margin: 16px 0 6px 0;
+}
 
 p.about, p.extra-about{
-  margin: 16px 0 6px 0;
+  /*margin: 16px 0 6px 0;*/
 }
 
 p a:link {
@@ -245,6 +248,7 @@ li.footer-nav-link a {
     padding: 0px 0px 0px 0em;
   }
 }
+
 @media (min-width: 1224px) {
   .section-title{
     display: none;
@@ -256,7 +260,7 @@ li.footer-nav-link a {
     clear: both;
   max-width: 26em;
   float: right;
-  margin: 3em 0 7em 2em;
+  margin: 4em 0 6em 2em;
   }
   header {
     text-align: left;
