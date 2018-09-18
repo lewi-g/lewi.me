@@ -139,10 +139,6 @@ span.and {
   margin: 16px 0 6px 0;
 }
 
-p.about, p.extra-about{
-  /*margin: 16px 0 6px 0;*/
-}
-
 p a:link {
   text-shadow: none;
   text-decoration: none;
@@ -291,18 +287,7 @@ li.footer-nav-link a {
     max-width: 30%;
     margin: 0 auto 5em;
   }
-  .first-project{
-    /*display: flex;*/
-  }
-
-  .second-project {
-    /*display: flex;*/
-  }
-
-  .third-project {
-    /*display: flex;*/
-   }
-
+  
   .project-image {
     max-width: 14em;
   }

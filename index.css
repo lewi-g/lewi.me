@@ -1,0 +1,20 @@
+body {
+  height: 95%;
+  margin: 40px;
+  padding: 0 0 0 45px;
+  
+}
+
+h1 {
+  margin-bottom: 0px;
+}
+p.prononciation {
+  margin-top: 0px;
+}
+
+.disclaimer {
+  padding-top: 200px;
+}
+a { 
+  color: #D93D1C;
+}
