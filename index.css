@@ -1,20 +1,25 @@
+* {
+  font-family: "helvetica";
+}
+
 body {
   height: 95%;
-  margin: 40px;
-  padding: 0 0 0 45px;
-  
+  width: 75%;
+  margin: 0 auto;
 }
 
-h1 {
-  margin-bottom: 0px;
-}
-p.prononciation {
-  margin-top: 0px;
+span {
+  font-size: .45em;
+  font-weight: 200;
+  color: lightslategray;
 }
 
-.disclaimer {
-  padding-top: 200px;
+
+h1, h2, .disclaimer , footer {
+  text-align: center;
+  /* padding-top: 200px; */
 }
+
 a { 
   color: #D93D1C;
 }
