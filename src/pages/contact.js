@@ -7,7 +7,7 @@ function ContactPage(){
     <Layout>
       <Head title="Contact"/>
       <h1>Contact Me</h1>
-      <p> The best way to reach me is via email at lewi.dev@gmail.com</p>     
+      <p> The best way to reach me is via email at <a href="mailto: lewi.dev@gmail.com">lewi.dev@gmail.com</a></p>     
     </Layout>
   )
 }
