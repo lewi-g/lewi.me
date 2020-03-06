@@ -35,6 +35,11 @@ function Header(){
             </Link>
           </li>
           <li>
+            <Link className={headerStyles.navItem} to="/projects" activeClassName={headerStyles.activeNavItem}>
+              Projects
+            </Link>
+          </li>
+          <li>
             <Link to="/blog" className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem}>
               Blog
             </Link>
