@@ -22,9 +22,7 @@ function Footer() {
           <a target="_blank" rel="noopener noreferrer" 
              className={footerStyles.navItem} 
              activeClassName={footerStyles.activeNavItem}
-              href="https://www.github.com/lewi-g"
-            >
-            GitHub
+              href="https://www.github.com/lewi-g">GitHub
           </a> 
         </li>
         <li >
@@ -32,18 +30,23 @@ function Footer() {
             target="_blank" rel="noopener noreferrer" 
             href="https://www.linkedin.com/in/lewi-g/"
             className={footerStyles.navItem} 
-            activeClassName={footerStyles.activeNavItem}
-            >
-            LinkedIn
+            activeClassName={footerStyles.activeNavItem}>LinkedIn
           </a> 
         </li>
         <li >
           <a 
+            target="_blank" rel="noopener noreferrer"
             href="mailto:lewi.dev@gmail.com"
             className={footerStyles.navItem} 
+            activeClassName={footerStyles.activeNavItem}>Email
+          </a>
+        </li>
+        <li >
+          <a 
+            target="_blank" rel="noopener noreferrer"
+            className={footerStyles.navItem} 
             activeClassName={footerStyles.activeNavItem}
-          >
-            Email
+            href={withPrefix('/lewi-resume.pdf')}>Resume
           </a>
         </li>
       </nav>
