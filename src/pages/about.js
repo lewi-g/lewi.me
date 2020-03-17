@@ -10,8 +10,8 @@ function AboutPage(){
       <section id="basics">
         <h2>About Me</h2>
         <p>I have written end-to-end tests for an in-house sales tracking app using Cypress. I have ran summer camps teaching HTML, CSS and JS to children ages 7 to 14.
-         I’m excited about exploring opportunities to grow as a software developer.</p>
-        <p>When not building sites, I spend time training to run a sub-3 hour marathon, cooking, reading, teaching and performing swing dances</p>
+         I am excited about exploring opportunities to grow as a software developer.</p>
+        <p>In my free time I enjoy cooking, reading, teaching and performing swing dances and training to run a marathon in under 3 hours.</p>
         <p> <Link to="/contact">Let's chat</Link>.</p>
       </section>
     </Layout>
