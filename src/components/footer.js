@@ -1,56 +1,69 @@
 import React from 'react'
-import {graphql, useStaticQuery, Link, withPrefix} from 'gatsby'
+import { graphql, useStaticQuery, Link, withPrefix } from 'gatsby'
 import footerStyles from './footer.module.scss'
-
 
 function Footer() {
   const data = useStaticQuery(graphql`
-    query{
+    query {
       site {
-        siteMetadata{
+        siteMetadata {
           author
         }
       }
-
     }
   `)
-  
+
   return (
     <footer>
-      <nav className={footerStyles.navList}>   
+      <nav className={footerStyles.navList}>
         <li>
-          <a target="_blank" rel="noopener noreferrer" 
-             className={footerStyles.navItem} 
-             activeClassName={footerStyles.activeNavItem}
-              href="https://www.github.com/lewi-g">GitHub
-          </a> 
-        </li>
-        <li >
-          <a 
-            target="_blank" rel="noopener noreferrer" 
-            href="https://www.linkedin.com/in/lewi-g/"
-            className={footerStyles.navItem} 
-            activeClassName={footerStyles.activeNavItem}>LinkedIn
-          </a> 
-        </li>
-        <li >
-          <a 
-            target="_blank" rel="noopener noreferrer"
-            href="mailto:lewi.dev@gmail.com"
-            className={footerStyles.navItem} 
-            activeClassName={footerStyles.activeNavItem}>Email
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            className={footerStyles.navItem}
+            activeClassName={footerStyles.activeNavItem}
+            href="https://www.github.com/lewi-g"
+          >
+            GitHub
           </a>
         </li>
-        <li >
-          <a 
-            target="_blank" rel="noopener noreferrer"
-            className={footerStyles.navItem} 
+        <li>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.linkedin.com/in/lewi-g/"
+            className={footerStyles.navItem}
             activeClassName={footerStyles.activeNavItem}
-            href={withPrefix('/lewi-resume.pdf')}>Resume
+          >
+            LinkedIn
+          </a>
+        </li>
+        <li>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="mailto:lewi.dev@gmail.com"
+            className={footerStyles.navItem}
+            activeClassName={footerStyles.activeNavItem}
+          >
+            Email
+          </a>
+        </li>
+        <li>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            className={footerStyles.navItem}
+            activeClassName={footerStyles.activeNavItem}
+            href={withPrefix('/LewiGilamichaelResume2021.pdf')}
+          >
+            Resume
           </a>
         </li>
       </nav>
-      <p className={footerStyles.copyright}>Created by {data.site.siteMetadata.author}, ©2020</p>
+      <p className={footerStyles.copyright}>
+        Created by {data.site.siteMetadata.author}, ©2021
+      </p>
     </footer>
   )
 }
