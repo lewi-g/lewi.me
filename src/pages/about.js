@@ -11,7 +11,7 @@ function AboutPage() {
         <h2>About Me</h2>
         <p>
           I'm an imperfect problem solver,{' '}
-          <a href="https://wwww.instagram.com/spouseadventures">van-lifer</a>,
+          <a href="https://www.instagram.com/spouseadventures">van-lifer</a>,
           runner, aspiring activist, expectant father and founding member of my
           second intentional community.
         </p>
