@@ -1,9 +1,14 @@
 import React from 'react'
 import headshotStyles from './headshot.module.scss'
 
-function Headshot(){
+function Headshot() {
   return (
-    <div role="img" aria-label="Lewi headshot" className={headshotStyles.headshot}>
+    <div className={headshotStyles.headshotContainer}>
+      <div
+        role="img"
+        aria-label="Lewi headshot"
+        className={headshotStyles.headshot}
+      ></div>
     </div>
   )
 }
