@@ -2,13 +2,13 @@ import * as React from 'react'
 import Layout from '../components/Layout'
 import SEO from '../components/SEO'
 
-const AboutPage = () => {
+const DancePage = () => {
   return (
     <Layout>
-      <p>Here will be all the things About</p>
+      <p>Here will be all the things dance</p>
     </Layout>
   )
 }
-export default AboutPage
+export default DancePage
 
-export const Head = () => <SEO pageTitle="About" />
+export const Head = () => <SEO pageTitle="Dance" />

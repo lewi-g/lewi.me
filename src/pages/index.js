@@ -1,23 +1,27 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import Layout from '../components/layout'
-import Head from '../components/head'
-import Headshot from '../components/headshot'
+import * as React from 'react'
+import Layout from '../components/Layout'
+import SEO from '../components/SEO'
 
-function IndexPage() {
+const IndexPage = () => {
   return (
     <Layout>
-      <Head title="Home" />
-      <Headshot />
-      <h1>Hello!</h1>
-      <h2>
-        I'm Lewi, a full-stack developer, community builder and educator living
-        in Philadelphia
-      </h2>
+      <h1>I am Lewi</h1>
+      <p>swing dancer, fitness enthusiast, web developer</p>
+
+      <h2>Current Status</h2>
       <p>
-        Need a developer? <Link to="/contact">Contact me</Link>
+        <b>Employment:</b> Actively looking.
+      </p>
+      <p>
+        <b>Reading:</b> The Culture Code by Daniel Coyle.
+      </p>
+      <p>
+        <b>Personal:</b> Juggling parenthood and life.
       </p>
     </Layout>
   )
 }
+
 export default IndexPage
+
+export const Head = () => <SEO />

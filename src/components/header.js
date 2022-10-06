@@ -1,57 +1,64 @@
-import React from 'react'
-import {Link, graphql, useStaticQuery} from 'gatsby'
+import * as React from 'react'
+import { Link } from 'gatsby'
+import { header, navList, activeNavItem, navItem } from './header.module.css'
 
-
-import headerStyles from './header.module.scss'
-
-function Header(){
-  const data = useStaticQuery(graphql`
-    query {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-  
+const Header = () => {
   return (
-    <header className={headerStyles.header}>
-      <h1> 
-        <Link className={headerStyles.title}to='/'>
-          {data.site.siteMetadata.title}
+    <header className={header}>
+      <div>
+        <Link className={navItem} to="/">
+          Lewi
         </Link>
-      </h1>
+      </div>
       <nav>
-        <ul className={headerStyles.navList}>
+        <ul className={navList}>
           <li>
-            <Link to="/" className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem}>
-              Home
+            <Link
+              activeClassName={activeNavItem}
+              className={navItem}
+              to="/about"
+            >
+              Web Developer
             </Link>
           </li>
           <li>
-            <Link className={headerStyles.navItem} to="/about" activeClassName={headerStyles.activeNavItem}>
-              About
+            <Link
+              activeClassName={activeNavItem}
+              className={navItem}
+              to="/dance"
+            >
+              Dancer
             </Link>
           </li>
           <li>
-            <Link className={headerStyles.navItem} to="/projects" activeClassName={headerStyles.activeNavItem}>
-              Projects
+            <Link
+              activeClassName={activeNavItem}
+              className={navItem}
+              to="/blog"
+            >
+              Thinker
             </Link>
           </li>
           <li>
-            <Link to="/blog" className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem}>
-              Blog
+            <Link
+              activeClassName={activeNavItem}
+              className={navItem}
+              to="/status"
+            >
+              Status History
             </Link>
           </li>
           <li>
-            <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/contact">
-              Contact
-            </Link>
+            <a
+              activeClassName={activeNavItem}
+              className={navItem}
+              href="/resume.pdf"
+            >
+              Resume
+            </a>
           </li>
         </ul>
       </nav>
-
     </header>
   )
 }

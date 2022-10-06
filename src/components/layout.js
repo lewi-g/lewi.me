@@ -1,17 +1,18 @@
-import React from 'react'
-import Footer from '../components/footer'
-import Header from '../components/header'
-import '../styles/index.scss'
-import layoutStyles from './layout.module.scss'
+import * as React from 'react'
+import SEO from './SEO'
+import Header from './Header'
+import Footer from './Footer'
+import { container, content } from './layout.module.css'
 
-function Layout(props){
+const Layout = ({ pageTitle, children }) => {
   return (
-    <div className={layoutStyles.container}>
-      <div className={layoutStyles.content}>
-        <Header />
-        {props.children}
-      </div>
-      <Footer/>
+    <div className={container}>
+      <Header />
+      <main className={content}>
+        {pageTitle ? <h1>{pageTitle}</h1> : null}
+        {children}
+      </main>
+      <Footer />
     </div>
   )
 }

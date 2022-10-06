@@ -1,42 +1,17 @@
-import React from 'react'
-import Layout from '../components/layout'
-import { Link, graphql, useStaticQuery } from "gatsby"
-import blogStyles from "./blog.module.scss"
-import Head from '../components/head'
+import * as React from 'react'
+import Layout from '../components/Layout'
+import SEO from '../components/SEO'
 
-function BlogPage(){
-  const data = useStaticQuery(graphql`
-    query {
-      allContentfulBlogPost(sort: { fields: publishedDate, order: DESC }) {
-        edges {
-          node {
-            title
-            slug
-            publishedDate(formatString: " MMMM Do, YYYY")
-          }
-        }
-      }
-    }
-  `)
-
+const BlogPage = () => {
   return (
     <Layout>
-      <Head title="Blog" />
-      <h1>Blog </h1>
-      <ol className={blogStyles.posts}>
-        {data.allContentfulBlogPost.edges.map(post => {
-          return (
-            <li className={blogStyles.post}>
-              <Link to={`/blog/${post.node.slug}`}>
-                <h2>{post.node.title}</h2>
-                <p>{post.node.publishedDate}</p>
-              </Link>
-            </li>
-          )
-        })}
-      </ol>
+      <p>
+        Here will be all the miscellaneous thoughts/observations I choose to
+        write
+      </p>
     </Layout>
   )
 }
-
 export default BlogPage
+
+export const Head = () => <SEO pageTitle="Thoughts" />

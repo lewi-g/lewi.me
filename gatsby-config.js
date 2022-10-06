@@ -1,19 +1,15 @@
 module.exports = {
-  /* Your site config here */
   siteMetadata: {
-    title: 'Lewi Gilamichael ',
-    author: 'Lewi Gilamichael'
+    title: 'Lewi',
+    description:
+      'Lewi is a web developer, fitness enthusiast and swing dancer.',
+    creator: 'Lewi Gilamichael',
+    github: 'https://github.com/lewi-g',
+    instagram: 'https://www.instagram.com/lewig__/',
+    linkedIn: 'https://www.linkedin.com/in/lewi-g/',
   },
   plugins: [
-    'gatsby-plugin-sass',
-    'gatsby-plugin-react-helmet',
-    {
-      resolve: `gatsby-source-contentful`,
-      options: {
-        spaceId: process.env.CONTENTFUL_SPACE_ID,
-        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
-      },
-    },
-  ]
+    'gatsby-plugin-image',
+    'gatsby-plugin-sharp',
+  ],
 }
- 

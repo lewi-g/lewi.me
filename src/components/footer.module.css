@@ -1,0 +1,25 @@
+.social-links {
+  display: flex;
+  list-style-type: none;
+  /* margin: 0; */
+  justify-content: center;
+  padding-left: 1rem;
+  /* display: flex; */
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: space-evenly; */
+  /* margin: 0% 30%;
+  list-style-type: none;
+  text-decoration: none; */
+}
+
+.link-item {
+  text-decoration: none;
+  color: #999999;
+  font-size: 0.9rem;
+  margin-right: 1.3rem;
+}
+
+.link-item:hover {
+  color: #666666;
+}

@@ -1,69 +1,45 @@
-import React from 'react'
-import { graphql, useStaticQuery, Link, withPrefix } from 'gatsby'
-import footerStyles from './footer.module.scss'
+import * as React from 'react'
+import { useStaticQuery, graphql } from 'gatsby'
+import { socialLinks, linkItem } from './footer.module.css'
 
-function Footer() {
+const Footer = () => {
   const data = useStaticQuery(graphql`
     query {
       site {
         siteMetadata {
-          author
+          github
+          instagram
+          linkedIn
         }
       }
     }
   `)
-
+  const { github, instagram, linkedIn } = data.site.siteMetadata
   return (
     <footer>
-      <nav className={footerStyles.navList}>
+      <ul className={socialLinks}>
         <li>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            className={footerStyles.navItem}
-            activeClassName={footerStyles.activeNavItem}
-            href="https://www.github.com/lewi-g"
-          >
-            GitHub
+          <a className={linkItem} href={github}>
+            Github
           </a>
         </li>
         <li>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.linkedin.com/in/lewi-g/"
-            className={footerStyles.navItem}
-            activeClassName={footerStyles.activeNavItem}
-          >
+          <a className={linkItem} href={instagram}>
+            Instagram
+          </a>
+        </li>
+        <li>
+          <a className={linkItem} href={linkedIn}>
             LinkedIn
           </a>
         </li>
         <li>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="mailto:lewi.dev@gmail.com"
-            className={footerStyles.navItem}
-            activeClassName={footerStyles.activeNavItem}
-          >
+          <a className={linkItem} href="">
             Email
           </a>
         </li>
-        <li>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            className={footerStyles.navItem}
-            activeClassName={footerStyles.activeNavItem}
-            href={withPrefix('/LewiGilamichaelResume2021.pdf')}
-          >
-            Resume
-          </a>
-        </li>
-      </nav>
-      <p className={footerStyles.copyright}>
-        Created by {data.site.siteMetadata.author}, ©2021
-      </p>
+      </ul>
+      <p>created by Lewi Gilamichael</p>
     </footer>
   )
 }
