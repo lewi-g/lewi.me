@@ -55,7 +55,7 @@ function Footer() {
             rel="noopener noreferrer"
             className={footerStyles.navItem}
             activeClassName={footerStyles.activeNavItem}
-            href={withPrefix('/LewiGilamichaelResume2021.pdf')}
+            href={withPrefix('/Lewi-2022-resume.pdf')}
           >
             Resume
           </a>
